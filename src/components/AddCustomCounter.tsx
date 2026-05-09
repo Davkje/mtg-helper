@@ -25,9 +25,9 @@ export default function AddCustomCounter({ dispatch, onClose }: Props) {
 	};
 
 	return (
-		<div className="py-3">
+		<div className="py-4">
 			<div className="flex items-center justify-between">
-				<h2 className="text-lg font-bold text-zinc-400">Custom Counters</h2>
+				<h2 className="text-lg font-bold text-zinc-300">Custom Counters</h2>
 				{!adding && (
 					<button
 						onClick={() => setAdding(true)}

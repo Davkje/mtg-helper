@@ -13,7 +13,7 @@ export default function Header({ activeTypeCount, onMenuOpen }: HeaderProps) {
 		<div className="sticky top-0 bg-zinc-950 z-10 py-2">
 			<div className="flex items-center justify-between gap-2">
 				<div>
-					<p className="text-lg font-semibold flex gap-2">
+					<p className="text-xl font-semibold flex gap-2">
 						<span>Card Types in Graveyards:</span>
 						<span className="text-green-400 ">{activeTypeCount}</span>
 					</p>

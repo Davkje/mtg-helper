@@ -23,7 +23,7 @@ export default function AddDeckCard({ dispatch, onClose }: Props) {
 	};
 
 	return (
-		<div className="py-3">
+		<div className="py-4">
 			<div className="flex items-center justify-between">
 				<h2 className="text-lg font-bold text-zinc-300">Deck Cards</h2>
 				{!adding && (

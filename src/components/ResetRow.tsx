@@ -18,8 +18,8 @@ export default function ResetRow({ dispatch, onClose }: Props) {
 	};
 
 	return (
-		<div className="flex items-center justify-between py-3">
-			<p className="text-lg font-bold text-zinc-200">Reset everything</p>
+		<div className="flex items-center justify-between py-4">
+			<p className="text-lg font-bold text-zinc-300">Reset everything</p>
 
 			<AnimatePresence mode="wait" initial={false}>
 				{confirming ? (

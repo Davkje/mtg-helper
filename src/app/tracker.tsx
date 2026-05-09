@@ -58,7 +58,7 @@ export default function GraveyardTracker() {
 
 					{/* Tracked deck card panels */}
 					<AnimatePresence initial={false}>
-						<div className="flex flex-col gap-2 pb-2">
+						<div className="flex flex-col gap-2 py-2">
 							{state.trackedCards.map((tc) => (
 								<motion.div
 									key={tc.id}

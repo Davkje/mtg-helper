@@ -8,6 +8,7 @@ import MasterGraveyard from "./MasterGraveyard";
 import ResetRow from "./ResetRow";
 import AddDeckCard from "./AddDeckCard";
 import AddCustomCounter from "./AddCustomCounter";
+import FullscreenToggle from "./FullscreenToggle";
 
 type Props = {
 	open: boolean;
@@ -41,11 +42,12 @@ export default function MenuSheet({ open, cardTypes, dispatch, onClose }: Props)
 						style={{ maxHeight: "85dvh" }}
 					>
 						{/* Handle */}
-						<div className="shrink-0 flex justify-center py-3">
+						<div className="shrink-0 flex justify-center py-4">
 							<div className="w-10 h-1 rounded-full bg-zinc-700" />
 						</div>
 
-						<div className="overflow-y-auto px-4 pt-0 pb-12">
+						<div className="overflow-y-auto px-4 pt-0 pb-4">
+							<FullscreenToggle />
 							<AddDeckCard dispatch={dispatch} onClose={onClose} />
 							<AddCustomCounter dispatch={dispatch} onClose={onClose} />
 							<ResetRow dispatch={dispatch} onClose={onClose} />
