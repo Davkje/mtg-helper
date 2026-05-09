@@ -1,5 +1,6 @@
 "use client";
 
+import dynamic from "next/dynamic";
 import { motion, AnimatePresence } from "framer-motion";
 import type { CardTypeStore } from "@/lib/types";
 import type { Action } from "@/lib/reducer";
@@ -8,7 +9,9 @@ import MasterGraveyard from "./MasterGraveyard";
 import ResetRow from "./ResetRow";
 import AddDeckCard from "./AddDeckCard";
 import AddCustomCounter from "./AddCustomCounter";
-import FullscreenToggle from "./FullscreenToggle";
+
+// Client-only: needs window/navigator at render time, no SSR needed
+const FullscreenToggle = dynamic(() => import("./FullscreenToggle"), { ssr: false });
 
 type Props = {
 	open: boolean;

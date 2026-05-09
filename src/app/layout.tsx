@@ -15,6 +15,12 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "MTG Graveyard Tracker",
   description: "Commander graveyard card type tracker for Lhurgoyf-type cards",
+  manifest: "/manifest.json",
+  appleWebApp: {
+    capable: true,
+    title: "MTG Tracker",
+    statusBarStyle: "black-translucent",
+  },
 };
 
 export default function RootLayout({
